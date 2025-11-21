@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champagne Joël Closson | Maison de Champagne à Avize</title>
+    <link rel="icon" type="image/png" href="logo.png"/>
+    <link rel="stylesheet" href="index4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index4.html" class="logo">
+            <img src="logo.png" alt="Logo Champagne Joel Closson" class="logo-image">
+            Joël<span>Closson</span>
+        </a>
+        <div class="nav-links">
+            <a href="#history">Histoire</a>
+            <a href="#creator">Créez votre champagne</a>
+            <a href="#products">Nos champagnes</a>
+            <a href="#production">Production</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>L'art du champagne <span>Grand Cru</span></h1>
+            <p>Une tradition familiale depuis 1965, située au cœur des coteaux d'Avize. Chaque cuvée exprime le caractère unique de notre terroir et notre savoir-faire d'exception.</p>
+            <a href="#creator" class="btn">Créez votre champagne</a>
+            
+            <!-- Logo décoratif -->
+            <img src="logo.png" alt="Logo décoratif" class="hero-logo-decorative">
+        </div>
+        <div class="hero-bubbles">
+            <div class="bubble bubble-large"></div>
+            <div class="bubble bubble-medium"></div>
+            <div class="bubble bubble-small"></div>
+            <div class="bubble bubble-small-2"></div>
+            <div class="bubble bubble-medium-2"></div>
+            <div class="bubble bubble-small-3"></div>
+            <div class="bubble bubble-large-2"></div>
+            <div class="bubble bubble-small-4"></div>
+        </div>
+    <div class="bubble bubble-tiny"></div>
+            <div class="bubble bubble-tiny-2"></div>
+            <div class="bubble bubble-tiny-3"></div>
+            <div class="bubble bubble-tiny-4"></div>
+            <div class="bubble bubble-tiny-5"></div>
+            <div class="bubble bubble-tiny-6"></div>
+    </section>
+
+    <!-- Horizontal Scroll -->
+    <div class="horizontal-scroll" id="horizontal-scroll">
+        <!-- Section 1: Histoire -->
+        <section class="scroll-section" id="history">
+            <div class="section-bg"></div>
+            <div class="section-content">
+                <h2 class="section-title">Notre Histoire</h2>
+                <p>Depuis 1965, la famille Closson perpétue la tradition du champagne de terroir sur les coteaux classés Grand Cru d'Avize. Notre domaine de 7 hectares cultive principalement le Chardonnay, cépage qui exprime avec élégance la minéralité caractéristique de nos sols crayeux.</p>
+                <p>Joël Closson, deuxième génération du domaine, a révolutionné notre approche en instaurant les principes de la viticulture biologique dès 1998. Aujourd'hui, son fils Pierre continue cette démarche d'excellence tout en développant des cuvées innovantes.</p>
+                
+                <div class="history-buttons">
+                    <a href="https://www.google.com/maps/place/Champagne+Jo%C3%ABl+CLOSSON/@48.9751076,3.3028358,16z/data=!3m1!4b1!4m6!3m5!1s0x47e8c217b9d46aab:0xd585e1e379e8b054!8m2!3d48.9751076!4d3.3054107!16s%2Fg%2F1whdhp21!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn">Visiter notre vignoble</a>
+                    <a href="histoire/album.html" class="btn btn-secondary">Voir l'album photo</a>
+                </div>
+            </div>
+            
+            <!-- Image familiale -->
+            <div class="section-image">
+                <img src="https://www.champagne-joel-closson.com/medias/images/img-4374.jpg" alt="Famille Closson - Vignerons" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Section 2: Créez votre champagne -->
+        <section class="scroll-section creator-section" id="creator">
+            <div class="section-content">
+                <h2 class="section-title">Créez votre champagne</h2>
+                <p>Composez votre propre assemblage et personnalisez votre cuvée selon vos préférences. Votre création pourra être produite en édition limitée et livrée chez vous.</p>
+                
+                <div class="creator-container">
+                    <div class="champagne-visualization">
+                        <div class="champagne-bottle">
+                            <div class="liquid" id="liquid"></div>
+                            <div class="bubbles-container" id="bubbles-container"></div>
+                        </div>
+                        <div class="champagne-stem"></div>
+                        <div class="champagne-base"></div>
+                    </div>
+                    <div class="creator-controls">
+                        <div class="control-group">
+                            <label for="chardonnay">Pourcentage de Chardonnay</label>
+                            <div class="slider-container">
+                                <input type="range" min="0" max="100" value="70" class="slider" id="chardonnay">
+                                <span class="slider-value" id="chardonnay-value">70%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label for="aging">Durée d'élevage (en mois)</label>
+                            <div class="slider-container">
+                                <input type="range" min="12" max="96" value="36" class="slider" id="aging">
+                                <span class="slider-value" id="aging-value">36 mois</span>
+                            </div>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label for="dosage">Dosage (sucre en g/L)</label>
+                            <div class="slider-container">
+                                <input type="range" min="0" max="15" value="6" class="slider" id="dosage">
+                                <span class="slider-value" id="dosage-value">6g/L</span>
+                            </div>
+                        </div>
+                        
+                        <div class="preview-window">
+                            <h4>Votre création</h4>
+                            <p id="preview-text">"Équilibré" : Champagne dominé par le Chardonnay (70%), élevé 36 mois sur lies avec un dosage Brut (6g/L)</p>
+                            <a href="https://www.champagne-joel-closson.com/boutique/" target="_blank" rel="noopener noreferrer" class="btn" style="margin-top: 10px;">Commander</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Nos champagnes -->
+        <section class="scroll-section products-section" id="products">
+            <div class="section-content">
+                <h2 class="section-title">Nos Champagnes</h2>
+                <p>Découvrez notre gamme de champagnes Grand Cru, expression authentique du terroir d'Avize.</p>
+                
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="obstine-ue-web2ok.png" alt="Obstinée">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Cuvée Obstinée par Séverine - Blanc de Noirs 75cL</h3>
+                            <p class="product-desc">100 % Pinot Noir </p>
+                            <p class="product-price">31€</p>
+                            <a href="https://www.champagne-joel-closson.com/boutique/cuvee-obstinee-par-severine/" target="_blank" rel="noopener noreferrer" class="btn">Détails</a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="prestige-4.avif" alt="Prestige">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Prestige - Demi-sec 75cL</h3>
+                            <p class="product-desc">60 % Pinot Meunier - 30 % Pinot Noir - 10 % Chardonnay</p>
+                            <p class="product-price">18,50€</p>
+                            <a href="https://www.champagne-joel-closson.com/boutique/prestige/champagne-prestige-demi-sec-75-cl.html" target="_blank" rel="noopener noreferrer" class="btn">Détails</a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="rose-4.avif" alt="Rosé">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Rosé - brut 75cl</h3>
+                            <p class="product-desc">60 % Pinot Meunier - 30 % Pinot Noir - 10 % Chardonnay</p>
+                            <p class="product-price">18€</p>
+                            <a href="https://www.champagne-joel-closson.com/boutique/rose/champagne-rose-brut-75-cl.html" target="_blank" rel="noopener noreferrer" class="btn">Détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Production -->
+        <section class="scroll-section" id="production">
+            <div class="section-content">
+                <h2 class="section-title">Art et Savoir-faire</h2>
+                <p>Notre processus de production allie tradition et innovation pour créer des champagnes d'exception.</p>
+                
+                <div class="production-steps">
+                    <div class="step">
+                        <h3>Vendanges Manuelles</h3>
+                        <p>Récolte à la main en petites caisses pour préserver l'intégrité des raisins</p>
+                    </div>
+                    <div class="step">
+                        <h3>Pressurage Doux</h3>
+                        <p>Extraction lente du moût avec pressoir pneumatique à basse pression</p>
+                    </div>
+                    <div class="step">
+                        <h3>Fermentation</h3>
+                        <p>En fûts de chêne français et cuves inox à température contrôlée</p>
+                    </div>
+                    <div class="step">
+                        <h3>Élevage sur Lies</h3>
+                        <p>De 36 à 72 mois en cave à 12°C avec remuage manuel régulier</p>
+                    </div>
+                    <div class="step">
+                        <h3>Dégorgement</h3>
+                        <p>À la main, après congélation du col, sans ajout de sulfites</p>
+                    </div>
+                </div>
+                
+                <a href="https://www.google.com/maps/place/Champagne+Jo%C3%ABl+CLOSSON/@48.9751076,3.3028358,16z/data=!3m1!4b1!4m6!3m5!1s0x47e8c217b9d46aab:0xd585e1e379e8b054!8m2!3d48.9751076!4d3.3054107!16s%2Fg%2F1whdhp21!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn">Visiter nos caves</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>Maison Joël Closson</h3>
+                <p>Depuis 1965, nous créons des champagnes d'exception qui expriment le caractère unique de notre terroir Grand Cru d'Avize.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/champagnejoelclosson" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/champagnejoelclosson/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@champagnejoelclosson5244" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="#history">Notre Histoire</a></li>
+                    <li><a href="#creator">Créez votre champagne</a></li>
+                    <li><a href="#products">Nos champagnes</a></li>
+                    <li><a href="#production">Process de production</a></li>
+                    <li><a href="https://www.google.com/maps/place/Champagne+Jo%C3%ABl+CLOSSON/@48.9751076,3.3028358,16z/data=!3m1!4b1!4m6!3m5!1s0x47e8c217b9d46aab:0xd585e1e379e8b054!8m2!3d48.9751076!4d3.3054107!16s%2Fg%2F1whdhp21!5m1!1e2?entry=ttu&g_ep=EgoyMDI1MTExMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Visite des caves</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Informations</h3>
+                <ul class="footer-links">
+                    <li><a href="https://www.champagne-joel-closson.com/boutique/" target="_blank" rel="noopener noreferrer">Boutique en ligne</a></li>
+                    <li><a href="https://www.champagne-joel-closson.com/pages/depositaires.html">Dépositaires</a></li>
+                    <li><a href="https://www.champagne-joel-closson.com/livre-d-or/">Livre d'or</a></li>
+                    <li><a href="https://www.champagne-joel-closson.com/contact/">Renseignements et devis</a></li>
+                    <li><a href="https://www.champagne-joel-closson.com/pages/foires-et-salons.html">Foires et Salons</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Champagne Joël Closson<br>
+                22 Rue de la Libération<br>
+                51190 Avize, France</p>
+                <p>Tel: +33 3 26 57 90 34<br>
+                Email: contact@joelclosson.com</p>
+            </div>
+        </div>
+        
+        
+        <!-- Informations pratiques -->
+        <div class="footer-info-section">
+            <div class="info-item">
+                <h4>Horaires d'ouverture</h4>
+                <p>Tous les jours de 9h à 12h et de 14h à 18h<br>
+                <em>Sauf le dimanche et jours fériés</em></p>
+            </div>
+            
+            <div class="info-item">
+                <h4>Click & Collect</h4>
+                <p><i class="fas fa-clock"></i> Prêt en 2H</p>
+            </div>
+            
+            <div class="info-item payment-methods">
+                <h4>Moyens de paiement</h4>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa" title="Visa"></i>
+                    <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                    <i class="fas fa-credit-card" title="CB"></i>
+                    <i class="fas fa-money-check" title="Chèque"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Avertissement légal -->
+        <div class="legal-warning">
+            <i class="fas fa-exclamation-triangle"></i>
+            <strong>Interdiction de vente de boissons alcooliques aux mineurs de moins de 18 ans.</strong>
+            La preuve de majorité de l'acheteur est exigée au moment de la vente en ligne.
+            <span class="legal-code">CODE DE LA SANTÉ PUBLIQUE, ART. L 3342-1 ET L3353-3</span>
+        </div>
+        
+        <div class="copyright">
+            &copy; 2025 Champagne Joël Closson. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script src="script4.js"></script>
+</body>
+</html>
